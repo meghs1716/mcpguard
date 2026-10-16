@@ -1,0 +1,8 @@
+mcp[cli]
+groq
+python-dotenv
+pydantic
+pytest
+streamlit
+matplotlib
+scikit-learn
