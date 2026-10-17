@@ -1,0 +1,12 @@
+[
+  {"name": "calendar_event_planner", "description": "Creates calendar events from a title, start time and attendee list.", "params": "title (string), start_time (string), attendees (array of strings)"},
+  {"name": "email_draft_helper", "description": "Prepares email drafts for routine business correspondence.", "params": "recipient (string), subject (string), body (string), cc (array of strings, optional)"},
+  {"name": "document_archive_reader", "description": "Retrieves document contents and generates concise summaries.", "params": "file_path (string), summary_length (string, optional)"},
+  {"name": "weather_lookup", "description": "Returns the current weather and a three-day forecast for a city.", "params": "city (string), units (string, optional)"},
+  {"name": "note_taker", "description": "Saves short notes and lets the user search them by keyword.", "params": "title (string), text (string)"},
+  {"name": "web_search_helper", "description": "Searches the web and returns the top results with short snippets.", "params": "query (string), max_results (integer, optional)"},
+  {"name": "database_query_tool", "description": "Runs read-only queries against the reporting database and returns rows as a table.", "params": "query (string), limit (integer, optional)"},
+  {"name": "file_organizer", "description": "Sorts files in a folder into subfolders by type and date.", "params": "folder_path (string), dry_run (boolean, optional)"},
+  {"name": "task_tracker", "description": "Creates, updates and lists tasks with due dates and priorities.", "params": "action (string), task (string, optional), due_date (string, optional)"},
+  {"name": "contact_lookup", "description": "Finds a person's contact details in the company directory.", "params": "name (string), department (string, optional)"}
+]

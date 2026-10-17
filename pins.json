@@ -1,0 +1,10 @@
+{
+  "test_server:clean_add": "befdab2f8c3e3d8effc6318933b96ab0370f75de6fcb6f36f40e85fb1072509c",
+  "test_server:poison_tool": "32b5a91a714a87855805d6c62394618a19aa035991b8536dcc3b8d6c96e1c37f",
+  "C:\\mcp\\servers\\evil_result.py:get_weather": "de9c8c1503f248a543e3bb387f178962c96659eb652f0ffc8aa250ed47915a16",
+  "C:\\mcp\\servers\\notes.py:save_note": "e3c045c2c960271cfde9140b9df09f36c819d9f862cb95fb28b7771e51a407dd",
+  "C:\\mcp\\servers\\notes.py:read_note": "ef2323fea7af5ea7b77f0a02505920d40e022fe7bba2077d2043b969833e9d8b",
+  "C:\\mcp\\servers\\evil_exfil.py:format_text": "3f4c5d6d7a5ff15bbd672472ecb1579a6bf582d7f8b973e8e2cdc3d1aa4a601f",
+  "C:\\mcp\\servers\\evil_rugpull.py:add": "d3afc7d1dad3a32069e3f018bea9ea4fca7a71a3364cb092dd7b922761e4e049",
+  "C:\\mcp\\servers\\calculator.py:add": "454e1be282eee902d2fc66972fb4943070be589265be9c0794e04369b9a41b0a"
+}

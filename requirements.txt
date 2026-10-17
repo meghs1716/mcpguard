@@ -6,3 +6,4 @@ pytest
 streamlit
 matplotlib
 scikit-learn
+pyyaml

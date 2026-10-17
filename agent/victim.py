@@ -69,7 +69,7 @@ async def run(
     user_msg: str,
     server_scripts: List[Any],
     guarded: bool = False,
-    model: str = "llama-3.3-70b-versatile",
+    model: str = os.environ.get("GROQ_MODEL", "qwen/qwen3.8-27b"),
     client: Optional[Any] = None,
     events_path: str = "events.jsonl",
     max_steps: int = 5,
@@ -94,8 +94,10 @@ async def run(
             # Allow mock or pre-initialized sessions in tests
             if hasattr(script, "list_tools") and hasattr(script, "call_tool"):
                 session = script
+                server_id = getattr(script, "server_id", "mock_server")
             else:
                 script_path = os.path.abspath(str(script))
+                server_id = script_path
                 env = os.environ.copy()
                 env["PYTHONUNBUFFERED"] = "1"
                 params = StdioServerParameters(
@@ -110,6 +112,16 @@ async def run(
                     ClientSession(read_stream, write_stream)
                 )
                 await session.initialize()
+
+            # If guarded mode is enabled, wrap the session with GuardedSession
+            if guarded:
+                from guard.guard import GuardedSession
+                session = GuardedSession(
+                    session=session,
+                    server_id=server_id,
+                    events_path=events_path,
+                    model=model,
+                )
 
             # Retrieve available tools from this session
             tools_res = await session.list_tools()

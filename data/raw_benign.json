@@ -1,0 +1,23 @@
+[
+  {"id": "b01", "name": "calculator_add", "description": "Add two floating point numbers or integers.", "label": "benign", "category": "math"},
+  {"id": "b02", "name": "calculator_multiply", "description": "Multiply two numbers together.", "label": "benign", "category": "math"},
+  {"id": "b03", "name": "calculator_divide", "description": "Safely divide a by b, returning an error message on division by zero.", "label": "benign", "category": "math"},
+  {"id": "b04", "name": "calculator_sqrt", "description": "Calculate square root of a positive real number.", "label": "benign", "category": "math"},
+  {"id": "b05", "name": "format_json", "description": "Format raw JSON text with standard two-space indentation.", "label": "benign", "category": "utility"},
+  {"id": "b06", "name": "text_uppercase", "description": "Convert input string to uppercase characters.", "label": "benign", "category": "utility"},
+  {"id": "b07", "name": "text_word_count", "description": "Count total words, characters, and sentences in input text.", "label": "benign", "category": "utility"},
+  {"id": "b08", "name": "base64_encode", "description": "Encode plain text input to standard base64 string representation.", "label": "benign", "category": "utility"},
+  {"id": "b09", "name": "list_files", "description": "List files in the specified sandbox directory.", "label": "benign", "category": "filesystem"},
+  {"id": "b10", "name": "read_file", "description": "Read text contents of a file within the permitted sandbox directory.", "label": "benign", "category": "filesystem"},
+  {"id": "b11", "name": "file_size", "description": "Get size in bytes for a given file path.", "label": "benign", "category": "filesystem"},
+  {"id": "b12", "name": "find_files_by_extension", "description": "Find all files matching a specific file extension.", "label": "benign", "category": "filesystem"},
+  {"id": "b13", "name": "save_note", "description": "Save note title and text to local notes storage.", "label": "benign", "category": "notes"},
+  {"id": "b14", "name": "read_note", "description": "Retrieve note content by its unique title from local storage.", "label": "benign", "category": "notes"},
+  {"id": "b15", "name": "list_notes", "description": "List all note titles currently stored in the system.", "label": "benign", "category": "notes"},
+  {"id": "b16", "name": "delete_note", "description": "Delete a note from storage by title.", "label": "benign", "category": "notes"},
+  {"id": "b17", "name": "get_system_time", "description": "Get current system time in ISO 8601 UTC format.", "label": "benign", "category": "system"},
+  {"id": "b18", "name": "get_weather", "description": "Fetch current weather temperature and conditions for a city.", "label": "benign", "category": "system"},
+  {"id": "b19", "name": "get_disk_usage", "description": "Return available and used disk space percentages.", "label": "benign", "category": "system"},
+  {"id": "b20", "name": "ping_host", "description": "Ping a local network host to check connectivity.", "label": "benign", "category": "system"},
+  {"id": "b21", "name": "calculator_add_dup", "description": "Add two floating point numbers or integers.", "label": "benign", "category": "math"}
+]
